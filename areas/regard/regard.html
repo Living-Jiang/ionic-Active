@@ -1,0 +1,26 @@
+<ion-view view-title="关注">
+    <ion-content>
+        <div class="card" ng-if="!isHasRegard">
+            <div class="item item-text-wrap">
+                <p>目前还没有任何关注的活动哦！</p>
+                <a href="#/tab/recommend">
+                    <button class="button button-clear button-positive">
+                        到活动页面看看
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="list" ng-repeat="read in regard" ng-if="isHasRegard">
+            <button class="button button-assertive btn" ng-click="showConfirm({{$index}})">
+                取消关注
+            </button>
+            <a class="item item-avatar" href="#/event/{{read.id}}">
+                <img ng-src="{{read.image}}">
+                <h2>{{read.title}}</h2>
+                <p>类型：{{read.category_name}}</p>
+                <p>价格：{{read.fee_str}}</p>
+                <p>地点：{{read.address}}</p>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>
