@@ -1,0 +1,83 @@
+/* Empty. Add your own CSS if you like */
+
+ion-header-bar .title {
+    text-align: center !important;
+}
+
+body {
+    font-family: 'Nokia';
+}
+
+
+/* select选择地区和活动类型 部分 */
+
+.row .col {
+    position: relative;
+    width: 88px;
+}
+
+.row .col p {
+    margin-bottom: 0;
+}
+
+.row .col select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-left: 8px;
+    padding-right: 14px;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.row .icon {
+    position: absolute;
+    right: 11px;
+}
+
+
+/* detail部分开始 */
+
+.detail h2 {
+    white-space: normal;
+}
+
+.detail p {
+    white-space: normal;
+}
+
+
+/* 关注 */
+
+.card {
+    margin: 0;
+    text-align: center;
+}
+.list {
+  margin-bottom: 0;
+}
+.list .btn {
+    font-size: 12px;
+    line-height: 18px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    top: 70px;
+    padding: 0;
+    width: 30px;
+    min-height: 30px;
+    left: 10px;
+}
+
+.center {
+    text-align: center;
+    color:#666;
+}
+
+/* back按钮 */
+body>.button.icon-left {
+    position: absolute;
+    z-index: 99;
+    left: 5px;
+}
